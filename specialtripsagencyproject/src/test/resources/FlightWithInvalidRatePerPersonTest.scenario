@@ -1,0 +1,45 @@
+<scenario>
+  <name>FlightWithInvalidRatePerPersonTest.scenario</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures>
+    <fact-data>
+      <type>Flight</type>
+      <fieldData>
+        <field-data>
+          <name>ratePerPerson</name>
+          <value></value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>flight</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>reason</fieldName>
+          <expected>Invalid ratePerPerson received for flight!!!</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Rejection</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName></packageName>
+  <imports>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.specialtripsagency.Rejection</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.specialtripsagency.Flight</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
+  </imports>
+</scenario>
