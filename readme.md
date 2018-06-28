@@ -1,3 +1,6 @@
+Update: June 2018 moved to [Gitlab](https://gitlab.com/eschabell/bpmsuite-travel-agency-repo).
+
+
 JBoss BPM Suite Travel Agency Demo
 ==================================
 
